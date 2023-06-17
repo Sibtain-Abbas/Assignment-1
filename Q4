@@ -1,0 +1,14 @@
+import 'dart:io';
+import 'dart:math';
+
+void main(List<String> args) {
+
+  print("ENTER BASE: ");
+  double base = double.parse(stdin.readLineSync() as String);
+
+  print("ENTER EXPONENT: ");
+  int exp = int.parse(stdin.readLineSync() as String);
+
+  num result = pow(base, exp);
+  print("\nRESULT: $result \n");
+}
